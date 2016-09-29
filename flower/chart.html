@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>chart</title>
+		<link rel="stylesheet" href="flower.css" type="text/css"/>
+		 <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+	</head>
+	<body id="chart">
+		<script type="text/javascript" src="flower.js"></script>
+		<div id="control">
+			<ul class="con">
+				<li id="l1" class="li_"></li>
+				<li id="l2" class="li_"></li>
+				<li id="l3" class="li_" >灯光</li>
+				<li id="l4" class="li_" >窗帘</li>
+				<li id="l5" class="li_" >水泵</li>
+				<li id="l6" class="li_" >重启</li>
+				<li id="l7" class="li_"></li>
+				<li id="l8" class="li_"></li>
+				<li id="l9" class="li_"></li>
+			</ul>
+			<div class="menuHolder">
+	<div class="menuWindow">
+		<ul class="p1">
+			<li class="s1" id='click'><a href="#url">Menu</a>
+				<ul class="p2" id="ul_1">
+					<li class="s2"><a href="login.html" class="la"><span>Switch</span></a></li>
+					<!--<li class="s2"><a href="#url" class="la"><span>节点1</span></a>-->
+						<!--<ul class="p3" >
+							<li class="a1"><a href="#" >温度传感器</a></li>
+							<li class="a1"><a href="#">水份传感器</a></li>
+							<li class="a1"><a href="#">湿度传感器</a></li>
+						</ul>-->
+					<!--</li>-->
+					<!--<li class="s2"><a href="#url" class="la"><span>节点2</span></a>-->
+						<!--<ul class="p3">
+							<li class="a2"><a href="#">传感器1</a></li>
+							<li class="a2"><a href="#">传感器2</a></li>
+							<li class="a2"><a href="#">传感器3</a></li>
+							<li class="a2"><a href="#">传感器4</a></li>
+							<li class="a2"><a href="#">传感器5</a></li>
+							<li class="a2"><a href="#">传感器6</a></li>
+						</ul>-->
+					<!--</li>-->
+					<!--<li class="s2"><a href="#url" class="la"><span>节点3</span></a>-->
+						<!--<ul class="p3">
+							<li class="a3"><a href="#">传感器1</a></li>
+							<li class="a3"><a href="#">传感器2</a></li>
+							<li class="a3"><a href="#">传感器3</a></li>
+						</ul>
+					</li>
+					<!--<li class="s2"><a href="#url" class="la"><span>节点4</span></a>-->
+						<!--<ul class="p3">
+							<li class="a4"><a href="#">传感器1</a></li>
+							<li class="a4"><a href="#">传感器2</a></li>
+							<li class="a4"><a href="#">传感器2</a></li>
+						</ul>
+					</li>-->
+					<!--<li class="s2"><a href="#url" class="la"><span>节点5</span></a>-->
+						<!--<ul class="p3">
+							<li class="a5"><a href="#">传感器1</a></li>
+							<li class="a5"><a href="#">传感器2</a></li>
+							<li class="a5"><a href="#">传感器3</a></li>
+							<li class="a5"><a href="#">传感器4</a></li>
+							<li class="a5"><a href="#">传感器5</a></li>
+						</ul>-->
+					<!--</li>-->
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+			<!--<input type="button" id="click" value="添加" />-->
+			<div id="img">
+			<img src="../img/bu_06.gif" width="50px" heigth="50px" alt="light" class="imgs" id="light"/>
+			<img src="../img/bu_04.gif" width="50px" heigth="50px" alt="door" class="imgs" id="door"/>
+			<img src="../img/bu_02.gif" width="50px" heigth="50px" alt="walter" class="imgs" id="walter"/>
+			<img src="../img/sa.gif" width="50px" heigth="50px" alt="light" class="imgs" id="img4"/>
+			</div>
+			<h1>IOTGService</h1>
+			<!--<input id="date1"type="datetime-local"/>-->
+		</div>
+	<div id="line">
+		<script src="d3.v3.min.js"></script>
+
+        <script src="index.js"></script>
+	</div>
+	<input id="date1"type="datetime-local" value="2016-09-01T00:00"/>
+	<input id="date2"type="datetime-local" value="2016-09-01T23:59"/>
+	<input id="search" type="button" value="查询" />
+	<div id="his">
+		
+		
+		<ul class="lis" id="lis">
+			<li class="list">2016-05-04 12:00 30% </li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-05-04 12:00 30% </li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-05-04 12:00 30% </li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-05-04 12:00 30% </li>
+			<li>2016-06-06 23:00 50%</li>
+			<li>2016-06-06 23:00 50%</li>	
+		</ul>
+		
+	</div>
+	
+	<script>
+	
+		
+	</script>	
+	</body>
+</html>
